@@ -1,26 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/camera.css">
 </head>
+
 <body>
+    <!-- made the nav bar section and added a camera ui -->
 
+    <div class="navbar">
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portraits.html">Portraits</a></li>
+                <li><a href="weddings.html">Weddings</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </div>
 
-        <div class="navbar">
-            <nav class="nav-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portraits.html">Portraits</a></li>
-                    <li><a href="weddings.html">Weddings</a></li>
-                    <li><a href="product.html">Products</a></li>
-                    <li><a href="packages.html">Packages</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
-                </ul>
-            </nav>
+    <div class="btn-wrapper">
+        <input id="capture-toggle" class="btn-cbox" type="checkbox" />
+        <label for="capture-toggle" class="btn">
+            <span class="letter">C</span>
+            <span class="letter">a</span>
+            <span class="letter">p</span>
+            <span class="letter">t</span>
+            <span class="letter">u</span>
+            <span class="letter">r</span>
+            <span class="letter">e</span>
+            <div class="shutter-wrapper">
+                <span class="shutter s-1"></span>
+                <span class="shutter s-2"></span>
+                <span class="shutter s-3"></span>
+                <span class="shutter s-4"></span>
+                <span class="shutter s-5"></span>
+                <span class="shutter s-6"></span>
+            </div>
+        </label>
+        <div class="flash"></div>
+        <video id="camera-preview" autoplay playsinline muted></video>
+        
+    </div>
+
+   
+
+    <script src="js/camera.js"></script>
+
+        <div class="positio">
+            <img width="550px" height="900" src="Assets\Images\photo-1580419726228-ac322986c82b.avif" alt = "photographer">
         </div>
-    
 </body>
+
 </html>
