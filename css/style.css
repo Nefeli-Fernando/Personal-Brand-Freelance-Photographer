@@ -1,18 +1,21 @@
 *{
 
+    body{
+    background-color: rgb(0, 0, 0);
+} 
 .navbar{
     color:beige;
-    background-color:rgb(3, 4, 71);
     padding:20px 40px;
     border-radius:20px;
     display: flex;
     justify-content: space-between;
     align-items:center;
     font-family: "Asimovian", sans-serif;
-    border-bottom:4px solid rgb(23, 168, 194);
-    box-shadow:0 10px 30px #7aecc644;
+    /*border-bottom:4px solid rgb(23, 168, 194);*/
+    box-shadow:rgb(41, 41, 41);
     animation: anime 0.5s ease forward;
     }
+
 
 .nav-links{
     list-style:none;

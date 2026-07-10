@@ -1,0 +1,1 @@
+Selected color palette > https://coolors.co/palette/44026c-3e0262-380259-1c0035-150b21-26061f-36001d-51002c-61173f
