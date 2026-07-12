@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -6,7 +11,8 @@
 body {
     margin: 0;
     background-color: rgb(0, 0, 0);
-    font-family: "Asimovian", sans-serif;
+    font-family: "Roboto Flex", sans-serif;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -14,11 +20,14 @@ body {
     padding: 20px 40px;
     border-radius: 20px;
     display: flex;
-    position:relative;
+    position: relative;
     justify-content: space-between;
     align-items: center;
     box-shadow: rgb(41, 41, 41);
     animation: anime 0.5s ease forwards;
+    display: flex;
+    justify-content: left;
+    align-items: left;
 }
 
 .nav-links {
@@ -48,8 +57,180 @@ body {
     color: rgb(84, 84, 84);
 }
 
-.positio{
-    position:relative;
-    left:910px;
-    top:-200px
+.hero-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 2rem 3rem 1.5rem;
+}
+
+.hero-copy {
+    flex: 1;
+    max-width: 500px;
+}
+
+.hero-images {
+    position: relative;
+    flex-shrink: 0;
+    width:35%;
+    height: auto;
+}
+
+/* This is for the 1st image */
+.positio {
+    position: relative;
+    left: auto;
+    top: auto;
+    display: block;
+    margin: 0;
+}
+
+.positio img {
+    display: block;
+    width: 500px;
+    height: auto;
+}
+
+/* this is for the 2nd image*/
+.positioo {
+    position: absolute;
+    left: -27rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    margin: 0;
+    z-index: 2;
+}
+
+.positioo img {
+    display: block;
+    width: 420px;
+    height: 600px;
+}
+
+h3 {
+    color: blanchedalmond;
+    font-family: "Roboto Flex", sans-serif;
+    text-align: left;
+    margin: 2;
+    line-height: 1.6;
+}
+
+.para {
+    color: blanchedalmond;
+    font-family: "Noto Sans JP", sans-serif;
+    text-align: left;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.gallery-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: #9a9184;
+}
+
+.stage {
+    position: relative;
+    height: 300px;
+    perspective: 1000px;
+    cursor: grab;
+}
+
+/* Trynna keep it contained properly on mobile*/
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Container hides the text that overflows the viewport */
+.marquee-container {
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    color: #fff;
+    padding: 15px 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+/* Track holds the text elements in a single horizontal row */
+.marquee-track {
+    display: flex;
+    flex-shrink: 0;
+    min-width: 100%;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+
+    /* Infinitely loops the keyframe over 15 seconds */
+    animation: scroll-left 57s linear infinite;
+}
+
+/* Individual items spacing inside the marquee track */
+.marquee-track span {
+    white-space: nowrap;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.marquee-track img {
+    width: 220px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* The math behind the loop: sliding exactly one full wrapper length left */
+@keyframes scroll-left {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Optional: Pauses the marquee movement when hovered over */
+.marquee-container:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 24px 16px;
+    border-top: 1px solid #e0e0e0;
+    background-color:black;
+    font-size: 14px;
+    color: hsl(0, 33%, 93%);
+}
+
+.footer-links {
+    margin-top: 8px;
+}
+
+.footer-links a {
+    color: #e1dada;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
 }
