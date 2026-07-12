@@ -26,14 +26,15 @@ body {
     padding: 20px 40px;
     border-radius: 20px;
     display: flex;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     justify-content: space-between;
     align-items: center;
-    box-shadow: rgb(41, 41, 41);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
     animation: anime 0.5s ease forwards;
-    display: flex;
-    justify-content: left;
-    align-items: left;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(6px);
 }
 
 .nav-links {
