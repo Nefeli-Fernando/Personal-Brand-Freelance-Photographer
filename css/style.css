@@ -211,3 +211,26 @@ html {
 .marquee-container:hover .marquee-track {
     animation-play-state: paused;
 }
+
+.site-footer {
+    text-align: center;
+    padding: 24px 16px;
+    border-top: 1px solid #e0e0e0;
+    background-color:black;
+    font-size: 14px;
+    color: hsl(0, 33%, 93%);
+}
+
+.footer-links {
+    margin-top: 8px;
+}
+
+.footer-links a {
+    color: #e1dada;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
