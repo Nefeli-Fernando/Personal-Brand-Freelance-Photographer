@@ -59,22 +59,22 @@ body {
 
 .hero-layout {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 50px;
     padding: 2rem 3rem 1.5rem;
 }
 
 .hero-copy {
     flex: 1;
-    max-width: 480px;
+    max-width: 500px;
 }
 
 .hero-images {
     position: relative;
     flex-shrink: 0;
-    width: min(42vw, 620px);
-    min-height: 520px;
+    width:35%;
+    height: auto;
 }
 
 /* This is for the 1st image */
@@ -88,37 +88,39 @@ body {
 
 .positio img {
     display: block;
-    width: min(100%, 550px);
+    width: 500px;
     height: auto;
 }
 
 /* this is for the 2nd image*/
 .positioo {
-    position: relative;
-    left: auto;
-    top: auto;
+    position: absolute;
+    left: -27rem;
+    top: 50%;
+    transform: translateY(-50%);
     display: block;
-    margin: -130px 0 0 180px;
+    margin: 0;
+    z-index: 2;
 }
 
 .positioo img {
     display: block;
-    width: min(100%, 390px);
-    height: auto;
+    width: 420px;
+    height: 600px;
 }
 
 h3 {
     color: blanchedalmond;
     font-family: "Roboto Flex", sans-serif;
-    position: static;
-    margin: 0 0 1rem;
+    text-align: left;
+    margin: 2;
+    line-height: 1.6;
 }
 
 .para {
     color: blanchedalmond;
     font-family: "Noto Sans JP", sans-serif;
     text-align: left;
-    position: static;
     margin: 0;
     line-height: 1.6;
 }
