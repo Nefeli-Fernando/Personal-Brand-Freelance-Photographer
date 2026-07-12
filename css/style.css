@@ -4,6 +4,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+
+.logo {
+    height: 50px; /* adjust to fit your design */
+    width: auto;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -199,7 +205,7 @@ html {
     align-items: center;
 
     /* Infinitely loops the keyframe over 15 seconds */
-    animation: scroll-left 57s linear infinite;
+    animation: scroll-left 69s linear infinite;
 }
 
 /* Individual items spacing inside the marquee track */
