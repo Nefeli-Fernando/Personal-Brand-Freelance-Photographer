@@ -12,7 +12,7 @@ body {
     margin: 0;
     background-color: rgb(0, 0, 0);
     font-family: "Roboto Flex", sans-serif;
-    ;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -57,38 +57,70 @@ body {
     color: rgb(84, 84, 84);
 }
 
-.positio {
-    position: relative;
-    left: 910px;
-    top: -100px;
+.hero-layout {
     display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 3rem 1.5rem;
 }
 
+.hero-copy {
+    flex: 1;
+    max-width: 480px;
+}
+
+.hero-images {
+    position: relative;
+    flex-shrink: 0;
+    width: min(42vw, 620px);
+    min-height: 520px;
+}
+
+/* This is for the 1st image */
+.positio {
+    position: relative;
+    left: auto;
+    top: auto;
+    display: block;
+    margin: 0;
+}
+
+.positio img {
+    display: block;
+    width: min(100%, 550px);
+    height: auto;
+}
+
+/* this is for the 2nd image*/
 .positioo {
     position: relative;
-    left: 510px;
-    top: -880px;
-    display: flex;
+    left: auto;
+    top: auto;
+    display: block;
+    margin: -130px 0 0 180px;
+}
+
+.positioo img {
+    display: block;
+    width: min(100%, 390px);
+    height: auto;
 }
 
 h3 {
     color: blanchedalmond;
     font-family: "Roboto Flex", sans-serif;
-    position: relative;
-    top: -1500px;
-    left: 30px;
-    display: flex;
+    position: static;
+    margin: 0 0 1rem;
 }
 
 .para {
     color: blanchedalmond;
     font-family: "Noto Sans JP", sans-serif;
-    text-align: justify;
-    position: relative;
-    top: -1500px;
-    left: 30px;
-    justify-content: left;
-    display: flex;
+    text-align: left;
+    position: static;
+    margin: 0;
+    line-height: 1.6;
 }
 
 .gallery-header {
@@ -127,11 +159,11 @@ html {
     display: flex;
     overflow: hidden;
     user-select: none;
-    background-color: #111;
     color: #fff;
     padding: 15px 0;
     font-family: sans-serif;
     font-weight: bold;
+    margin-top: 1rem;
 }
 
 /* Track holds the text elements in a single horizontal row */
@@ -141,15 +173,25 @@ html {
     min-width: 100%;
     justify-content: space-around;
     gap: 20px;
+    align-items: center;
 
     /* Infinitely loops the keyframe over 15 seconds */
-    animation: scroll-left 15s linear infinite;
+    animation: scroll-left 57s linear infinite;
 }
 
 /* Individual items spacing inside the marquee track */
 .marquee-track span {
     white-space: nowrap;
     padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.marquee-track img {
+    width: 220px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 /* The math behind the loop: sliding exactly one full wrapper length left */
