@@ -1,39 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact us</title>
-    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contactUs.css">
+
 </head>
+
 <body>
-    
+
     <!--<header class="site-header">
         <img src="Assets\Icons\high-resolution-color-logo.png" alt="DO Photography" class="logo">
     </header>-->
 
     <head>
-    <link rel="icon" type="image/png" href="Assets\Icons\high-resolution-color-logo.png">
-</head>
+        <link rel="icon" type="image/png" href="Assets\Icons\high-resolution-color-logo.png">
+    </head>
 
     <div class="navbar">
-            <nav class="nav-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portraits.html">Portraits</a></li>
-                    <li><a href="weddings.html">Weddings</a></li>
-                    <li><a href="product.html">Products</a></li>
-                    <li><a href="packages.html">Packages</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portraits.html">Portraits</a></li>
+                <li><a href="weddings.html">Weddings</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </div>
 
-        
+    <div class="formi">
+        <form>
+            <fieldset>
+                <label>First Name :
+                    <input type="text" name="firstName" required placeholder="Enter your first name">
+                </label>
 
+                <label>Last Name :
+                    <input type="text" name="lastName" required placeholder="Enter your last name">
+                </label>
 
+                <label>Email :
+                    <input type="email" name="email" required placeholder="Enter your email">
+                </label>
 
-        <footer class="site-footer">
+                <label>Wedding Date (if applicable) :
+                    <input type="date" name="eventDate">
+                </label>
+
+                <label>Message :
+                    <textarea name="message" required placeholder="Tell me what you're looking for..."></textarea>
+                </label>
+
+                <button type="submit">Send</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <footer class="site-footer">
         <p>&copy; 2026 Daniel Osei Photography. All rights reserved.</p>
         <div class="footer-links">
             <a href="mailto:you@example.com">Email</a>
@@ -41,4 +69,5 @@
         </div>
     </footer>
 </body>
+
 </html>
