@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -6,7 +11,8 @@
 body {
     margin: 0;
     background-color: rgb(0, 0, 0);
-    font-family: "Asimovian", sans-serif;
+    font-family: "Roboto Flex", sans-serif;
+    ;
 }
 
 .navbar {
@@ -14,11 +20,14 @@ body {
     padding: 20px 40px;
     border-radius: 20px;
     display: flex;
-    position:relative;
+    position: relative;
     justify-content: space-between;
     align-items: center;
     box-shadow: rgb(41, 41, 41);
     animation: anime 0.5s ease forwards;
+    display: flex;
+    justify-content: left;
+    align-items: left;
 }
 
 .nav-links {
@@ -48,8 +57,113 @@ body {
     color: rgb(84, 84, 84);
 }
 
-.positio{
-    position:relative;
-    left:910px;
-    top:-200px
+.positio {
+    position: relative;
+    left: 910px;
+    top: -100px;
+    display: flex;
+}
+
+.positioo {
+    position: relative;
+    left: 510px;
+    top: -880px;
+    display: flex;
+}
+
+h3 {
+    color: blanchedalmond;
+    font-family: "Roboto Flex", sans-serif;
+    position: relative;
+    top: -1500px;
+    left: 30px;
+    display: flex;
+}
+
+.para {
+    color: blanchedalmond;
+    font-family: "Noto Sans JP", sans-serif;
+    text-align: justify;
+    position: relative;
+    top: -1500px;
+    left: 30px;
+    justify-content: left;
+    display: flex;
+}
+
+.gallery-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: #9a9184;
+}
+
+.stage {
+    position: relative;
+    height: 300px;
+    perspective: 1000px;
+    cursor: grab;
+}
+
+/* Trynna keep it contained properly on mobile*/
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Container hides the text that overflows the viewport */
+.marquee-container {
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    background-color: #111;
+    color: #fff;
+    padding: 15px 0;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/* Track holds the text elements in a single horizontal row */
+.marquee-track {
+    display: flex;
+    flex-shrink: 0;
+    min-width: 100%;
+    justify-content: space-around;
+    gap: 20px;
+
+    /* Infinitely loops the keyframe over 15 seconds */
+    animation: scroll-left 15s linear infinite;
+}
+
+/* Individual items spacing inside the marquee track */
+.marquee-track span {
+    white-space: nowrap;
+    padding: 0 10px;
+}
+
+/* The math behind the loop: sliding exactly one full wrapper length left */
+@keyframes scroll-left {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Optional: Pauses the marquee movement when hovered over */
+.marquee-container:hover .marquee-track {
+    animation-play-state: paused;
 }

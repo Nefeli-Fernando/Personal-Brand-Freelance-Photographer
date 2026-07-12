@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             stream = null;
         }
         preview.srcObject = null;
+        preview.classList.remove('is-active');
     };
 
     toggle.addEventListener('change', async () => {
@@ -21,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
             toggle.checked = false;
+            preview.classList.remove('is-active');
             return;
         }
 
@@ -31,9 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             preview.srcObject = stream;
+            preview.classList.add('is-active');
             preview.play().catch(() => {});
         } catch (error) {
             toggle.checked = false;
+            preview.classList.remove('is-active');
             console.error('Camera access failed:', error);
         }
     });
