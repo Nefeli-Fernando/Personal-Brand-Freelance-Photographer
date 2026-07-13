@@ -1,24 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact us</title>
-    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contactUs.css">
+
 </head>
+
 <body>
-  
+
+    <!--<header class="site-header">
+        <img src="Assets\Icons\high-resolution-color-logo.png" alt="DO Photography" class="logo">
+    </header>-->
+
+    <head>
+        <link rel="icon" type="image/png" href="Assets\Icons\high-resolution-color-logo.png">
+    </head>
+
     <div class="navbar">
-            <nav class="nav-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portraits.html">Portraits</a></li>
-                    <li><a href="weddings.html">Weddings</a></li>
-                    <li><a href="product.html">Products</a></li>
-                    <li><a href="packages.html">Packages</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
-                </ul>
-            </nav>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portraits.html">Portraits</a></li>
+                <li><a href="weddings.html">Weddings</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="testimonials">
+        <h2>What Clients Say</h2>
+
+        <div class="marquee">
+            <div class="marquee-track">
+
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="stars">★★★★★</div>
+                    <div class="infos">
+                        <p class="date-time">2 days ago</p>
+                        <p class="description">Daniel captured our wedding so beautifully — every emotion, every laugh,
+                            every tear. We couldn't be happier.</p>
+                    </div>
+                    <div class="author">— Amara & Kwesi</div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="stars">★★★★★</div>
+                    <div class="infos">
+                        <p class="date-time">1 week ago</p>
+                        <p class="description">Professional, relaxed, and made our portrait session actually fun. The
+                            photos are stunning.</p>
+                    </div>
+                    <div class="author">— John Doe</div>
+                </div>
+
+                <!-- Add more cards as needed -->
+
+                <!-- Duplicate set for seamless loop -->
+                <div class="card">
+                    <div class="stars">★★★★★</div>
+                    <div class="infos">
+                        <p class="date-time">2 days ago</p>
+                        <p class="description">Daniel captured our wedding so beautifully — every emotion, every laugh,
+                            every tear. We couldn't be happier.</p>
+                    </div>
+                    <div class="author">— Amara & Kwesi</div>
+                </div>
+
+                <div class="card">
+                    <div class="stars">★★★★★</div>
+                    <div class="infos">
+                        <p class="date-time">3 days ago</p>
+                        <p class="description">We didn't want a stiff, posed wedding album — Daniel gave us something that actually feels like us. Every photo tells a little story.</p>
+                    </div>
+                    <div class="author">— Nadia & Farhan</div>
+                </div>
+
+                <div class="card">
+                    <div class="stars">★★★★★</div>
+                    <div class="infos">
+                        <p class="date-time">Last week</p>
+                        <p class="description">I hate having my photo taken, honestly. Daniel made it painless and the portraits came out better than I ever expected.</p>
+                    </div>
+                    <div class="author">— Priya Fernando </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="stars">★★★★★</div>
+                    <div class="infos">
+                        <p class="date-time">2 months ago</p>
+                        <p class="description">Our small jewelry brand needed product photos that didn't look generic. Daniel nailed the brief on the first try.</p>
+                    </div>
+                    <div class="author">— Kavindi Jayasuriya</div>
+                </div>
+
+
+                <div class="card">
+                    <div class="stars">★★★★★</div>
+                    <div class="infos">
+                        <p class="date-time">5 days ago</p>
+                        <p class="description">From the ceremony to the after-party, nothing felt missed. Daniel has a great eye for candid, in-the-moment shots.</p>
+                    </div>
+                    <div class="author">— Chamath & Dilini</div>
+                </div>
+
+                <div class="card">
+                    <div class="stars">★★★★★</div>
+                    <div class="infos">
+                        <p class="date-time">1 week ago</p>
+                        <p class="description">Professional, relaxed, and made our portrait session actually fun. The
+                            photos are stunning.</p>
+                    </div>
+                    <div class="author">— John Doe</div>
+                </div>
+
+            </div>
         </div>
+    </section>
+
+    <div class="vid">
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="Assets\Videos\killerokxxxx1_pindown.io_1783905414.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="formi">
+        <form>
+            <fieldset>
+                <label>First Name :
+                    <input type="text" name="firstName" required placeholder="Enter your first name">
+                </label>
+
+                <label>Last Name :
+                    <input type="text" name="lastName" required placeholder="Enter your last name">
+                </label>
+
+                <label>Email :
+                    <input type="email" name="email" required placeholder="Enter your email">
+                </label>
+
+                <label>Wedding Date (if applicable) :
+                    <input type="date" name="eventDate">
+                </label>
+
+                <label>Message :
+                    <textarea name="message" required placeholder="Tell me what you're looking for..."></textarea>
+                </label>
+
+                <button type="submit">Send</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Daniel Osei Photography. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="mailto:you@example.com">Email</a>
+            <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a>
+        </div>
+    </footer>
 </body>
+
 </html>
