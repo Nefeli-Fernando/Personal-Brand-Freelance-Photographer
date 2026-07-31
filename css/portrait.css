@@ -64,3 +64,13 @@
     top: auto;
     left: auto;
 }
+
+.beat {
+    color: white;
+    text-align: justify;
+    text-align-last: center;
+    margin: 24px auto 0;
+    max-width: 900px;
+    line-height: 1.7;
+    padding: 0 20px;
+}
