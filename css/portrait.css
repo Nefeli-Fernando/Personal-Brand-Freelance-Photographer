@@ -1,0 +1,76 @@
+/* From Uiverse.io by Tiagoadag */
+
+.portrait-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    padding: 40px 20px;
+}
+
+.portrait-gallery > div {
+    display: flex;
+}
+
+/* first card */
+.card {
+    width: 290px;
+    height: 424px;
+    background-image: linear-gradient(163deg, #e911af 0%, #76119e 100%);
+    border-radius: 20px;
+    transition: all .3s;
+    position: static;
+    left: auto;
+    margin: 0;
+}
+
+.card2 {
+    width: 290px;
+    height: 424px;
+    background-color: #1a1a1a;
+    border-radius: 2px;
+    transition: all .2s;
+}
+
+.yuri2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+.yuri:hover {
+    box-shadow: 0px 0px 30px 1px rgba(202, 43, 200, 0.3);
+}
+
+/* second card */
+.first {
+    width: 290px;
+    height: 424px;
+    background-image: linear-gradient(163deg, #e911af 0%, #76119e 100%);
+    border-radius: 20px;
+    transition: all .3s;
+    position: static;
+    top: auto;
+    left: auto;
+    margin: 0;
+}
+
+.first3 {
+    width: 290px;
+    height: 424px;
+    background-color: #1a1a1a;
+    border-radius: 2px;
+    transition: all .2s;
+    position: static;
+    top: auto;
+    left: auto;
+}
+
+.beat {
+    color: white;
+    text-align: justify;
+    text-align-last: center;
+    margin: 24px auto 0;
+    max-width: 900px;
+    line-height: 1.7;
+    padding: 0 20px;
+}
