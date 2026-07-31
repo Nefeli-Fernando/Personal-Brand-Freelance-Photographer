@@ -24,12 +24,6 @@ The main purpose of this project is to create a professional online presence whe
   * Displays different portrait styles and approaches
   * Helps clients explore portrait photography options
 
-* **Product Photography Page**
-
-  * Showcases product photography created for small brands and businesses
-  * Demonstrates how products can be presented professionally through photography
-  * Helps businesses understand the available services
-
 * **Packages Page**
 
   * Provides details about available photography packages
